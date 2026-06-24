@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ko-fi – Settings</title>
+<link rel="stylesheet" href="styles.css" />
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+<div id="phone">
+
+  <!-- ══ SETTINGS SCREEN ══ -->
+  <div id="settings-screen">
+
+    <!-- Nav -->
+    <div class="s-nav">
+      <!-- Ko-fi logo -->
+      <img src="assets/kofi-logo.png" alt="Ko-fi" style="width:34px;height:34px;flex-shrink:0;object-fit:contain" />
+      <div class="s-nav-spacer"></div>
+      <!-- Avatar -->
+      <div class="s-nav-avatar">
+        <img src="assets/avatar.png" style="width:100%;height:100%;object-fit:cover;border-radius:50%;display:block" alt="avatar" />
+      </div>
+      <!-- Bell -->
+      <button class="s-nav-icon">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+      </button>
+      <!-- Mail -->
+      <button class="s-nav-icon">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      </button>
+      <!-- Home -->
+      <button class="s-nav-icon">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>
+      </button>
+      <!-- Menu -->
+      <button class="s-nav-icon">
+        <svg width="18" height="13" viewBox="0 0 18 13"><rect width="18" height="2.4" rx="1.2" fill="#192025"/><rect y="5.3" width="18" height="2.4" rx="1.2" fill="#192025"/><rect y="10.6" width="18" height="2.4" rx="1.2" fill="#192025"/></svg>
+      </button>
+    </div>
+
+    <!-- Title -->
+    <p class="s-page-title">Settings</p>
+
+    <!-- Tabs -->
+    <div class="s-tabs">
+      <div class="s-tab" onclick="swTab(this)">Profile</div>
+      <div class="s-tab active" onclick="swTab(this)">Payment</div>
+      <div class="s-tab" onclick="swTab(this)">Page</div>
+    </div>
+
+    <!-- Scroll body -->
+    <div class="s-scroll">
+      <div class="s-body">
+
+          <!-- PAYMENT METHODS -->
+          <div class="s-card">
+            <p class="s-section-title">Payment methods</p>
+            <p class="s-section-desc" style="margin-bottom:0">Connect PayPal or Stripe to start receiving payments directly to your own account. Once connected, your fans can pay using cards, Apple Pay, Google Pay, Venmo and more! No extra setup needed.</p>
+
+            <!-- PayPal -->
+            <div class="s-payment-row">
+              <div class="s-payment-badge paypal" style="display:flex;align-items:center;margin-top:3px"><svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.47271 8.32639C3.34771 8.95139 2.94146 11.7326 2.78521 12.5139C2.78521 12.5764 2.75396 12.6076 2.69146 12.6076H0.378962C0.128962 12.6076 -0.0272877 12.3889 0.00396227 12.1701L1.81646 0.545139C1.87896 0.232639 2.12896 0.0138889 2.44146 0.0138889C7.22271 0.0138889 7.59771 -0.111111 8.81646 0.388889C10.6915 1.10764 10.879 2.85764 10.1915 4.76389C9.53521 6.70139 7.94146 7.54514 5.81646 7.57639C4.47271 7.60764 3.66021 7.35764 3.47271 8.32639ZM11.1602 3.82639C11.0977 3.79514 11.0665 3.79514 11.0665 3.88889C11.004 4.23264 10.9102 4.57639 10.7852 4.92014C9.53521 8.48264 6.06646 8.17014 4.37896 8.17014C4.19146 8.17014 4.06646 8.29514 4.03521 8.48264C3.34771 12.8576 3.19146 13.7639 3.19146 13.7639C3.16021 13.9826 3.31646 14.1701 3.53521 14.1701H5.50396C5.78521 14.1701 6.00396 13.9826 6.06646 13.7014C6.09771 13.5451 6.03521 13.8889 6.50396 10.8576C6.66021 10.1701 6.97271 10.2326 7.44146 10.2326C9.66021 10.2326 11.379 9.35764 11.879 6.73264C12.0977 5.63889 12.0352 4.51389 11.1602 3.82639Z" fill="#009CDE"/></svg></div>
+              <div class="s-payment-info">
+                <p class="s-pay-name">PayPal</p>
+                <p class="s-pay-sub">Accept payments around the world and offer supporters a brand they trust.<br>Fast and trusted payments worldwide.</p>
+                <button class="s-connected-btn">
+                  <svg width="11" height="11" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="5.25" stroke="#42D6AA" stroke-width="1.5"/><path d="M3.5 6l1.8 1.8L8.5 4.5" stroke="#42D6AA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  Connected
+                </button>
+                <div class="s-email-row">Connected with test01@gmail.com <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#b0a89e" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
+              </div>
+            </div>
+
+            <!-- Stripe -->
+            <div class="s-payment-row">
+              <div class="s-payment-badge stripe" style="display:flex;align-items:center;margin-top:3px"><svg width="12" height="17" viewBox="0 0 12 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.5 4.84375C4.5 6.84375 11.3125 5.90625 11.3125 11.2188C11.3125 14.4375 8.75 16.0312 5.0625 16.0312C3.375 16 1.71875 15.6562 0.1875 15V11C1.65625 11.8125 3.5625 12.4062 5.0625 12.4062C6.03125 12.4062 6.75 12.1562 6.75 11.3125C6.75 9.1875 0 10 0 5.0625C0 1.90625 2.40625 0 6 0C7.5 0 8.96875 0.25 10.4375 0.84375V5.03125C9.09375 4.28125 7.375 3.875 6 3.875C5.0625 3.875 4.5 4.15625 4.5 4.84375Z" fill="#6772E5"/></svg></div>
+              <div class="s-payment-info">
+                <p class="s-pay-name">Stripe</p>
+                <p class="s-pay-sub">Let your supporters pay using credit or debit cards, Apple Pay, Google Pay, GrabPay and more!<br>Secure card payments, Apple Pay, Google Pay and more.</p>
+                <button class="s-connected-btn">
+                  <svg width="11" height="11" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="5.25" stroke="#42D6AA" stroke-width="1.5"/><path d="M3.5 6l1.8 1.8L8.5 4.5" stroke="#42D6AA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  Connected
+                </button>
+                <div class="s-email-row">Connected with test01@gmail.com <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#b0a89e" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CURRENCY -->
+          <div class="s-card">
+            <div class="s-label-row">Currency <span class="s-i">i</span></div>
+            <p class="s-section-desc">Choose the currency you'd like to receive payments in. Supporters can pay in their own currency and it'll be converted for you.</p>
+            <div class="s-select-wrap">
+              <select class="s-select"><option>US $</option><option>£ GBP</option><option>€ EUR</option><option>¥ JPY</option></select>
+              <svg class="s-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="#848a95" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+          </div>
+
+          <!-- TIP SETTINGS -->
+          <div class="s-card">
+            <p class="s-section-title">Tip settings</p>
+            <p class="s-section-desc">Customize the tip panel on your page.</p>
+            <div style="display:flex;align-items:center;gap:4px;font-size:13px;font-weight:600;color:#192025;margin-bottom:4px">
+              Choose a tip mode <span class="s-i">i</span>
+            </div>
+            <div class="s-radio-row" onclick="pickMode('coffee')">
+              <div class="s-radio-dot" id="r-coffee"></div>
+              <div><p class="s-radio-label">Coffee metaphor</p><p class="s-radio-sub">Use the "Buy me a..." metaphor (you can change 'coffee' to anything!)</p></div>
+            </div>
+            <div class="s-radio-row" onclick="pickMode('simple')">
+              <div class="s-radio-dot on" id="r-simple"></div>
+              <div><p class="s-radio-label">Simple tip</p><p class="s-radio-sub">If the coffee metaphor isn't for you, switch to a traditional tip view without unit amounts.</p></div>
+            </div>
+            <div class="s-tip-preview">
+              <p style="font-size:12px;color:rgba(255,255,255,0.45);margin-bottom:7px">Support name</p>
+              <input class="s-tip-inp" value="£ 1" />
+              <textarea class="s-tip-ta" placeholder="Your message"></textarea>
+              <button class="s-tip-donate">Donate</button>
+            </div>
+          </div>
+
+          <!-- SUGGESTED AMOUNTS -->
+          <div class="s-card">
+            <div class="s-toggle-row">
+              <div class="s-toggle-content">
+                <p class="s-section-title">Turn on suggested amounts</p>
+                <p class="s-section-desc" style="margin-bottom:0">You can set up to 3 suggested amounts.</p>
+              </div>
+              <button class="s-toggle" onclick="this.classList.toggle('on')"></button>
+            </div>
+          </div>
+
+          <!-- MINIMUM PRICE -->
+          <div class="s-card">
+            <div class="s-label-row">Minimum price <span class="s-i">i</span></div>
+            <input class="s-input" value="1" type="number" min="1" />
+          </div>
+
+          <!-- TIP OR DONATE -->
+          <div class="s-card">
+            <div class="s-label-row">'Tip' or 'Donate' wording <span class="s-i">i</span></div>
+            <div class="s-select-wrap">
+              <select class="s-select"><option>Tip</option><option>Donate</option><option>Support</option></select>
+              <svg class="s-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="#848a95" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+          </div>
+
+          <!-- ══ AUTO THANK YOU → SAY THANK YOU COMPOSE ══ -->
+          <div class="s-card">
+            <p class="s-section-title">Auto 'thank you' message</p>
+            <p class="s-section-desc">Set a personal thank you message that supporters will receive after they tip.</p>
+
+            <!-- Multi-video list -->
+            <div id="video-list"></div>
+
+            <!-- Add video button -->
+            <button id="add-vid-btn" onclick="startNewVideo()">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              Add video message
+            </button>
+
+            <!-- Compose wrap (shown when adding/editing) -->
+            <div id="compose-wrap">
+            <!-- Compose -->
+            <div class="compose-card">
+              <textarea id="compose-ta" rows="2" placeholder="E.g Thank you! Your support helps me keep doing what I love."></textarea>
+
+              <!-- Media preview area -->
+              <div id="cmp-media-wrap" style="display:none">
+                <div id="cmp-vid-wrap" class="cmp-video-inner" style="display:none;position:relative">
+                  <video id="cmp-vid" muted></video>
+                  <div class="cmp-vid-overlay"><svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M7 4v16l13-8z"/></svg></div>
+                  <button class="rm-btn" onclick="clearMedia()">✕</button>
+                </div>
+                <div id="cmp-img-wrap" class="cmp-img-inner" style="display:none;margin:0 0 8px;position:relative">
+                  <img id="cmp-img" src="" alt=""/>
+                  <button class="rm-btn" onclick="clearMedia()">✕</button>
+                </div>
+              </div>
+              <div id="cmp-file-row" class="cmp-file-wrap" style="display:none;margin:0 0 8px">
+                <svg width="11" height="13" viewBox="0 0 14 16" fill="none" stroke="#848a95" stroke-width="1.5"><path d="M8 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V6z"/><polyline points="8 1 8 6 13 6"/></svg>
+                <span id="cmp-fname"></span>
+                <button class="rm-file-btn" onclick="clearMedia()">✕</button>
+              </div>
+
+              <!-- Audience selector (video only) -->
+              <div id="audience-row">
+                <span class="aud-label">Send to</span>
+                <button class="aud-option sel" data-aud="all" onclick="togAudMain('all')">
+                  <div class="aud-dot"></div>
+                  <span class="aud-text">All Supporters</span>
+                </button>
+                <button class="aud-option" data-aud="tiers" onclick="togAudMain('tiers')">
+                  <div class="aud-dot"></div>
+                  <span class="aud-text">Specific Membership Tiers</span>
+                </button>
+                <!-- Tier checkboxes -->
+                <div id="tier-list">
+                  <button class="tier-opt" data-tier="tier1" onclick="togTier(this)">
+                    <div class="tier-chk"><svg class="tier-chk-icon" width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.8 6.5L9 1" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                    <span class="tier-text">Tier 1</span>
+                  </button>
+                  <button class="tier-opt" data-tier="tier2" onclick="togTier(this)">
+                    <div class="tier-chk"><svg class="tier-chk-icon" width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.8 6.5L9 1" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                    <span class="tier-text">Tier 2</span>
+                  </button>
+                  <button class="tier-opt" data-tier="tier3" onclick="togTier(this)">
+                    <div class="tier-chk"><svg class="tier-chk-icon" width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.8 6.5L9 1" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                    <span class="tier-text">Tier 3</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Action bar -->
+              <div id="action-bar">
+                <input type="file" id="file-input" accept="*/*" style="display:none" onchange="onFile(this)" />
+                <button class="act-btn" onclick="document.getElementById('file-input').click()">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 16 12 12 8 16"/><line x1="12" y1="12" x2="12" y2="21"/><path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"/></svg>
+                  Media
+                </button>
+                <button class="act-btn" onclick="openWc()">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+                  Record Video
+                </button>
+              </div>
+            </div>
+
+            <!-- Bottom row -->
+            <div id="compose-foot">
+              <label class="priv-label" onclick="togPriv()">
+                <div class="chk-box" id="chk">
+                  <svg id="chk-icon" width="8" height="6" viewBox="0 0 10 8" fill="none" style="display:none"><path d="M1 3.5L3.8 6.5L9 1" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <span class="priv-text">Make this public</span>
+                <span class="pub-tag" id="pub-tag" style="display:none">
+                  <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#3ac89e" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                  Public
+                </span>
+              </label>
+              <div style="display:flex;gap:6px;flex-shrink:0">
+                <button onclick="closeCompose()" style="height:34px;padding:0 12px;border-radius:8px;border:1px solid #e0d9d0;background:transparent;font-size:13px;font-weight:600;color:#848a95;font-family:'DM Sans',sans-serif;cursor:pointer;">Cancel</button>
+                <button id="save-btn" onclick="doSave()">Save</button>
+              </div>
+            </div>
+            </div><!-- /compose-wrap -->
+          </div>
+          <!-- ══ end compose ══ -->
+
+
+
+          <!-- MEMBERSHIPS -->
+          <div class="s-card">
+            <p class="s-section-title">Memberships and monthly tips</p>
+            <p class="s-section-desc">Set up Monthly tips or Membership tiers from the <a href="#" onclick="return false">Memberships setup</a> page</p>
+            <div class="s-toggle-row">
+              <div class="s-toggle-content">
+                <p class="s-section-title">Default to monthly tips</p>
+                <p class="s-section-desc" style="margin-bottom:0">Make monthly donations the default option for supporters.</p>
+              </div>
+              <button class="s-toggle" onclick="this.classList.toggle('on')"></button>
+            </div>
+          </div>
+
+          <!-- ADVANCED -->
+          <div class="s-card">
+            <p class="s-section-title" style="font-size:17px;margin-bottom:14px">Advanced</p>
+            <div class="s-toggle-row">
+              <div class="s-toggle-content">
+                <p class="s-section-title">Be a Contributor, unlock all of Ko-fi!</p>
+                <p class="s-section-desc" style="margin-bottom:0">Share 5% of future tips to support our development and unlock all of Ko-fi, such as customization options, supporter-only content and our advanced features!</p>
+              </div>
+              <button class="s-toggle on" onclick="this.classList.toggle('on')"></button>
+            </div>
+          </div>
+
+      </div><!-- /s-body -->
+    </div><!-- /s-scroll -->
+  </div><!-- /settings-screen -->
+
+  <!-- ══ WEBCAM OVERLAY ══ -->
+  <div id="wc-overlay">
+    <div id="wc-modal">
+      <div class="wc-hd">
+        <p class="wc-title">Record Video</p>
+        <button class="wc-x" onclick="closeWc()">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#848a95" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="wc-body">
+        <div class="wc-preview">
+          <span id="wc-loading">Starting camera…</span>
+          <video id="wc-live" autoplay muted playsinline></video>
+          <video id="wc-review" controls playsinline></video>
+          <div id="wc-rec-ind">
+            <div class="r-dot"></div>
+            <span class="r-time" id="wc-secs">0s / 30s</span>
+          </div>
+          <div id="wc-demo">📹 Demo mode</div>
+        </div>
+        <div class="wc-btns" id="wc-btns"></div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /phone -->
+<script src="script.js"></script>
+</body>
+</html>
