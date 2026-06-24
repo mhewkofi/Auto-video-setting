@@ -1,8 +1,0 @@
-@import './fonts.css';
-@import './tailwind.css';
-@import './theme.css';
-
-body,
-body :where(p, button, input, textarea, select, label, span, div):not([class*="fa-"]):not([class*="Font_Awesome"]) {
-  font-family: 'DM Sans', sans-serif !important;
-}
